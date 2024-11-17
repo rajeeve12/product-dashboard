@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ProductList from './ProductList';
+import AddProductForm from './AddProductForm';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -52,3 +54,12 @@ class ProductManager {
     this.renderProducts();
     this.setupForm();
   }}
+  const addNewProduct = (productData) => {
+    setProducts(prevProducts => [
+      Product,
+      {
+        Product,
+        id: New.ProductDate() 
+      }
+    ]);
+  };
