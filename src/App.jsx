@@ -33,3 +33,22 @@ function App() {
 }
 
 export default App
+
+const products = [
+  {id: 1, name: "Product 1", price: 20, description: "Juice"
+  },
+  {id: 2, name: "Product 2", price: 40, description: "Chicken Sandwich"
+  },
+  {id: 3, name: "Product 3", price: 60, description: "TV"
+  }
+];
+class ProductManager {
+  constructor() {
+    this.products = [...defaultProducts];
+    this.func();
+  }
+
+  func() {
+    this.renderProducts();
+    this.setupForm();
+  }}
